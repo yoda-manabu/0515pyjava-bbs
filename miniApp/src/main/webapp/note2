@@ -1,0 +1,46 @@
+[ブラウザ (ユーザー画面)]
+   │
+   ▼
+─────────────────────────────
+| JSPファイル（画面表示）        						 |
+| ・login.jsp       ← ログイン画面       				 |
+| ・register.jsp    ← 新規登録画面        				 |
+| ・registerConfirm.jsp ← 登録確認画面    				 |
+| ・registerComplete.jsp ← 登録完了画面   				 |
+| ・home.jsp        ← ログイン後ホーム画面				 |
+| ・edit.jsp        ← 編集入力画面        	  			 |
+| ・editConfirm.jsp ← 編集確認画面       				 |
+| ・editComplete.jsp← 編集完了画面    			    	 |
+| ・deleteConfirm.jsp← 削除確認画面      				 |
+| ・deleteComplete.jsp← 削除完了画面      				 |
+─────────────────────────────
+   │
+   ▼ フォーム送信（POST/GET）
+─────────────────────────────
+| サーブレット（Controller）         				     |
+| ・LoginServlet（ログイン処理）        				 |
+| ・RegisterServlet（登録処理）      				     |
+| ・EditServlet（編集処理）        				         |
+| ・DeleteServlet（削除処理）        				     |
+─────────────────────────────
+   │
+   ▼
+─────────────────────────────
+| サービス層（ビジネスロジック）      					 |
+| ・UserLoginService      ← 認証処理    			     |
+| ・UserRegisterService   ← 登録処理    			     |
+| ・UserEditService       ← 編集処理     			     |
+| ・UserDeleteService     ← 削除処理   		         |
+─────────────────────────────
+   │
+   ▼
+─────────────────────────────
+| DAO層（データアクセス）             					 |
+| ・UserDAO             ← DB操作（CRUD）     			 |
+─────────────────────────────
+   │
+   ▼
+─────────────────────────────
+| データベース                       					 |
+| ・usersテーブル                 					     |
+─────────────────────────────

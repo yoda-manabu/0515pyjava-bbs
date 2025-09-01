@@ -1,0 +1,246 @@
+/* ===== スマホ対応 ===== */
+@media screen and (max-width: 600px) {
+    body {
+        margin: 10px;
+        font-size: 12px;
+    }
+
+    table, textarea, pre {
+        width: 100%;
+    }
+
+    .post-card {
+        padding: 8px;
+    }
+
+    button, a.button-link {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}
+
+/* ===== 全体 ===== */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #121212;
+    color: #e0e0e0;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+/* 見出し */
+h2, h3 {
+    color: #ffcc00;
+    text-shadow: 1px 1px #000;
+    margin-bottom: 10px;
+}
+
+/* リンク（通常） */
+a {
+    color: #66ff66;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00ffcc;
+    text-decoration: underline;
+    
+    
+}
+/* 掲示板見出しを目立たせる */
+.board-title {
+    font-size: 36px;            /* 大きめ */
+    font-weight: 900;           /* 太め */
+    color: #ffeb3b;             /* 明るい黄色 */
+    text-shadow: 2px 2px 6px #f57f17, 0 0 10px #fff176; /* 光っているような影 */
+    text-align: center;
+    margin: 20px 0;
+}
+
+	
+
+/* ボタン風リンク */
+a.button-link {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #222222;
+    color: #ffcc00;
+    border: 2px solid #ffcc00;
+    border-radius: 4px;
+    margin: 4px 2px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.button-link:hover {
+    background-color: #ffcc00;
+    color: #222222;
+}
+
+/* ===== 投稿一覧カード風 ===== */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+}
+
+.post-card {
+    display: block;
+    background-color: #1c1c1c;
+    border: 2px solid #00ff99;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 255, 153, 0.6);
+}
+
+.post-card td {
+    display: block;
+    border: none;
+    padding: 4px 0;
+}
+
+.post-card td a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.post-card td a:hover {
+    text-decoration: underline;
+}
+
+.post-block ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.post-block li {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.05em;
+    list-style: none;
+}
+
+.post-block li::before {
+    content: "";  /* 箇条書きの記号を完全に消す */
+}
+
+
+/* 投稿・返信ブロック */
+.post-block, .reply-block {
+    background-color: #1c1c1c;
+    border: 2px solid #00ff99;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.reply-block {
+    background-color: #191919;
+    border-color: #00cc88;
+}
+
+/* 投稿本文 */
+pre {
+    white-space: pre-wrap;
+    color: #00ff99;
+    font-size: 12px;
+}
+
+/* フォーム */
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 2px solid #ffcc00;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 6px 12px;
+    border: 2px solid #ffcc00;
+    border-radius: 4px;
+    background-color: #222222;
+    color: #ffcc00;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffcc00;
+    color: #222222;
+}
+
+/* 削除ボタン */
+.reply-delete-btn {
+    padding: 2px 5px;
+    font-size: 0.8em;
+    cursor: pointer;
+    border: 2px solid #ff0000;
+    color: #ff0000;
+    background-color: #1e1e1e;
+    border-radius: 3px;
+}
+
+.reply-delete-btn:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+/* リンク・フォーム余白 */
+p a { margin-right: 10px; }
+form { margin-top: 10px; }
+
+
+
+
+/* ===== 掲示板メインボタン（強化版） ===== */
+.highlight-button {
+    display: inline-block;
+    padding: 25px 60px;
+    font-size: 26px;               /* 文字を大きめ */
+    font-weight: 900;              /* 太くする */
+    color: #ffffff;                /* 白文字で目立たせる */
+    text-shadow: 2px 2px 4px #000000; /* 縁取りで読みやすく */
+    background: linear-gradient(135deg, #ff5722, #ff9800);
+    border-radius: 15px;
+    text-decoration: none;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.6);
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s, color 0.3s;
+}
+
+.highlight-button:hover {
+    transform: scale(1.2); /* 少し大きく */
+    box-shadow: 0 12px 20px rgba(0,0,0,0.7);
+    background: linear-gradient(135deg, #ff7043, #ffb74d);
+    color: #ffeb3b; /* 黄系に変化してより目立つ */
+    text-shadow: 2px 2px 6px #000000;
+}
+
+.rank-number {
+    font-family: 'Arial', sans-serif;  /* 安定した数字表示フォント */
+}
+
+.lucky-color {
+    text-shadow: 1px 1px 2px #ffffff;
+}
+
+
+/* スマホ対応 */
+@media screen and (max-width: 600px) {
+    .highlight-button {
+        padding: 18px 40px;
+        font-size: 20px;
+    }
+}
